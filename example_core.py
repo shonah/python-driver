@@ -30,7 +30,7 @@ KEYSPACE = "testkeyspace"
 
 
 def main():
-    cluster = Cluster(['127.0.0.1'])
+    cluster = Cluster(['127.0.1.1'])
     session = cluster.connect()
 
     log.info("creating keyspace...")
